@@ -9,11 +9,11 @@
  }
 
 .bg-dark {
-  background-color: #005DB1 !important;
+  background-color: #f8f3ed !important;
 }
 
 .bg-dark-bottom {
-  background-color: #005DB1 !important;
+  background-color: #f8f3ed !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -94,11 +94,32 @@ header {
 }
 
 .navbar-brand{
-  font-size: 1.50rem;
+  font-size: 3rem;
   font-style: normal;
   font-family: 'Josefin Sans', sans-serif;
   color: #f8f9fa;
 }
+
+.navbar-dark .navbar-brand {
+  color: #8E2A03
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #8E2A03
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #8E2A03
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #BB7F67
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #BB7F67
+}
+
 
 .maps{
   background-color: black;
@@ -300,7 +321,7 @@ p2 {
 
 #maps {
   padding: 100px 0;
-  background-color: #FFF;
+  background-color: #f8f3ed;
 }
 
 #photos {
@@ -310,18 +331,18 @@ p2 {
 
 #aboutme {
   padding: 100px 0;
-  background-color: #FFF;
+  background-color: #f8f3ed;
 }
 
 #resume {
   padding: 100px 0;
-  background-color: #338BD4;
+  background-color: #f8f3ed;
 }
 
 #contactme {
   padding-top: 100px 0;
   padding-bottom: 250px;
-  background-color: #000000;
+  background-color: #f8f3ed;
 }
 
 section {
