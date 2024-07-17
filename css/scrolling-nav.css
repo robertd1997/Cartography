@@ -198,8 +198,9 @@ h2{
 h6{
   font-size: 24pt;
   font-style: normal;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #FFF;
+  color: #8E2A03;
+  font-family: 'Yantramanav', sans-serif;
+
 }
 
 h3{
@@ -234,8 +235,14 @@ p2 {
   font-family: 'Raleway', sans-serif;
 }
 
+.text-white {
+  color: #8E2A03 !important;;
+  font-family: 'Yantramanav', sans-serif;
+}
+
 .lead{
-  color: black;
+  color: #8E2A03;
+  font-family: 'Yantramanav', sans-serif;
 }
 
 @media handheld, only screen and (min-width: 1295px) {
@@ -513,9 +520,10 @@ img.hover-shadow {
 
 
 a:link {
-    color: #f8f9fa;
     background-color: transparent;
     text-decoration: none;
+    color: #8E2A03;
+    font-family: 'Yantramanav', sans-serif;
 
 }
 
