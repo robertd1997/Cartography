@@ -238,6 +238,7 @@ p2 {
 .text-white {
   color: #8E2A03 !important;;
   font-family: 'Yantramanav', sans-serif;
+  font-size: 12pt;
 }
 
 .lead{
@@ -528,7 +529,7 @@ a:link {
 }
 
 a:visited {
-    color: #f8f9fa;
+    color: #8E2A03;
     background-color: transparent;
     text-decoration: none;
 
