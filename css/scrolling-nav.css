@@ -9,11 +9,11 @@
  }
 
 .bg-dark {
-  background-color: #f8f3ed !important;
+  background-color: #ffffff !important;
 }
 
 .bg-dark-bottom {
-  background-color: #f8f3ed !important;
+  background-color: #ffffff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -329,28 +329,28 @@ p2 {
 
 #maps {
   padding: 100px 0;
-  background-color: #f8f3ed;
+  background-color: #ffffff;
 }
 
 #photos {
   padding: 100px 0;
-  background-color: #f8f3ed;
+  background-color: #ffffff;
 }
 
 #aboutme {
   padding: 100px 0;
-  background-color: #f8f3ed;
+  background-color: #ffffff;
 }
 
 #resume {
   padding: 100px 0;
-  background-color: #f8f3ed;
+  background-color: #ffffff;
 }
 
 #contactme {
   padding-top: 100px 0;
   padding-bottom: 250px;
-  background-color: #f8f3ed;
+  background-color: #ffffff;
 }
 
 section {
