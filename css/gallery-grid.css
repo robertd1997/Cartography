@@ -1,54 +1,82 @@
-
-.container.gallery-container {
-    background-color: #fff;
-    color: #35373a;
-    min-height: 100vh;
-    border-radius: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
-}
-
-
-
-.gallery-container p.page-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 25px auto;
-    color: #888;
-    font-size: 18px;
+.gallery-shell {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(35, 68, 94, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 14px 36px rgba(25, 56, 84, 0.08);
 }
 
 .tz-gallery {
-    padding: 40px;
+  padding: 1.35rem 1.35rem 0;
+}
+
+.tz-gallery .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.tz-gallery .row > [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tz-gallery .lightbox {
+  display: block;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(0);
+  transition: transform 260ms ease, box-shadow 260ms ease;
+}
+
+.tz-gallery .lightbox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 32, 49, 0) 55%, rgba(12, 32, 49, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  z-index: 1;
 }
 
 .tz-gallery .lightbox img {
-    width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 280ms ease;
 }
 
-
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+.map-gallery .lightbox img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #eef3f7;
 }
 
-.tz-gallery img {
-    border-radius: 4px;
+.tz-gallery .lightbox:hover {
+  box-shadow: 0 18px 30px rgba(17, 45, 67, 0.2);
+  transform: translateY(-4px);
+}
+
+.tz-gallery .lightbox:hover::before {
+  opacity: 1;
+}
+
+.tz-gallery .lightbox:hover img {
+  transform: scale(1.045);
 }
 
 .baguetteBox-button {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
+@media (max-width: 767.98px) {
+  .gallery-shell {
+    border-radius: 14px;
+  }
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .container.gallery-container {
-        border-radius: 0;
-    }
+  .tz-gallery {
+    padding: 1rem 1rem 0;
+  }
 }
